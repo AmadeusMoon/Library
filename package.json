@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
-    "i18n": "^0.15.1",
+    "@types/node": "^20.10.6",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "redux": "^4.1.0"
