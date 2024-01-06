@@ -12,10 +12,12 @@ html {
     font-family: 'Aileron', Arial, Helvetica, sans-serif;
 }
 
-.App.DarkTheme{
-color:black;
+.App.DarkTheme {
+    background-color: white;
+    color:black;
 }
 
-.App.LightTheme{
-color:white;
+.App.LightTheme {
+    background-color: black;
+    color:white;
 }

@@ -1,9 +1,13 @@
-import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './styles/Homepage.css';
+import { useSelector } from 'react-redux';
+import { RootState } from '../state/state';
 
 function Homepage() {
+  const theme = useSelector((state: RootState) => state.theme.theme);
+  console.log(theme);
+
   return (
     <div
       className="homepage"
@@ -21,7 +25,7 @@ function Homepage() {
         className="hero-section"
         id="hero-section"
       >
-        <p className="hero-text">Your Text Here</p>
+        <p className={`hero-text-${theme}`}>Your Text Here</p>
       </div>
       <div
         className="ad1"

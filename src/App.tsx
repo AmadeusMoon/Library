@@ -8,11 +8,11 @@ import BookReading from './pages/BookReading';
 import Events from './pages/Events';
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { ThemeState } from './state/reducers/theme';
 import { useSelector } from 'react-redux';
+import { RootState } from './state/state';
 
 function App() {
-  const theme = useSelector((state: ThemeState) => state.theme);
+  const theme = useSelector((state: RootState) => state.theme.theme);
 
   return (
     <div className={`App ${theme}`}>
