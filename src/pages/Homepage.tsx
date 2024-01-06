@@ -1,23 +1,30 @@
+import DarkThemeReading from '../assets/DarkThemeReading.jpg';
+import LightThemeReading from '../assets/LightThemeReading.jpg';
+import Event from '../assets/Event.jpg';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import './styles/Homepage.css';
 import { useSelector } from 'react-redux';
 import { RootState } from '../state/state';
+import './styles/Homepage.css';
 
 function Homepage() {
   const theme = useSelector((state: RootState) => state.theme.theme);
-  console.log(theme);
+  const readingImage =
+    theme === 'LightTheme' ? LightThemeReading : DarkThemeReading;
+  const eventImage = Event;
+  const aboutImage = '';
 
   return (
     <div
       className="homepage"
       id="homepage"
     >
-      {/* Navigation Bar */}
+      {/* Topside content */}
       <div
-        className="navbar"
-        id="navbar"
+        className="topside"
+        id="topside"
       >
+        {/* Logo */}
         <Navbar />
       </div>
       {/* Hero section */}
@@ -25,7 +32,7 @@ function Homepage() {
         className="hero-section"
         id="hero-section"
       >
-        <p className={`hero-text-${theme}`}>Your Text Here</p>
+        <p className={`hero-text-${theme}`}>Librarium Imperialis</p>
       </div>
       <div
         className="ad1"
@@ -39,21 +46,61 @@ function Homepage() {
         id="main-content"
       >
         <div
-          className="redirect-reading"
+          className={`redirect-reading-${theme}`}
           id="redirect-reading"
         >
-          Redirect Reading
+          <img
+            src={readingImage}
+            alt={`${theme} mecanicus priest image inviting you to read`}
+            className="image"
+          />
+          <h2>Citizen,</h2>
+          <h3>The Ecclesiarchy Commands Your Presence</h3>
+          <p>
+            The Emperor's word demands your attention. It is not a request, but
+            a duty. A duty to the Emperor, to the Imperium, to your very soul.
+          </p>
+          <h3>Your Shield Against the Darkness</h3>
+          <p>
+            That's his word, is your shield against the darkness. Neglect it,
+            and you open yourself to chaos, to heresy.
+          </p>
+          <h3>Attend the Reading</h3>
+          <p>
+            Heresy is not a path you wish to tread. Attend the reading. Absorb
+            His wisdom.
+          </p>
+          <h3>For Your Own Good</h3>
+          <p>
+            It is for your own good, for the well-being of your soul. There is
+            no choice in this matter. Only obedience.
+          </p>
+          <h2>The Emperor Protects.</h2>
         </div>
         <div
           className="redirect-events"
           id="redirect-events"
         >
-          Redirect Events
+          <img
+            src={eventImage}
+            alt="Your Image"
+            className="image2"
+          />
+          <p>
+            Redirect Events sssssssssssssssssssssss sssssssssssssssssssss
+            ssssssssssssssss ssssssssssssssssssss ssssssssssssssssssss
+            ssssssssssssssssssss
+          </p>
         </div>
         <div
           className="redirect-about"
           id="redirect-about"
         >
+          <img
+            src={aboutImage}
+            alt="Your Image"
+            className="image3"
+          />
           Redirect About
         </div>
       </div>

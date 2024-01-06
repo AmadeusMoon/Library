@@ -13,11 +13,11 @@ html {
 }
 
 .App.DarkTheme {
-    background-color: white;
-    color:black;
+    background-color: black;
+    color:white;
 }
 
 .App.LightTheme {
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
 }

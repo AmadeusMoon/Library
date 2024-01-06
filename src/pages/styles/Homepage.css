@@ -1,12 +1,11 @@
 .homepage {
     display: grid;
-    grid-template-rows: 0.25fr 2fr 3fr 0.25fr;
+    grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
     grid-template-columns: 2fr 4fr 2fr;
-    height: 100vh;
     gap: 3vh;
 }
 
-#navbar {
+#topside {
     grid-row: 1;
     grid-column: 1 / span 3;
     background-color: blue;
@@ -16,10 +15,9 @@
 #hero-section {
     grid-row: 2;
     grid-column: 1 / span 3;
-    background-color: lightgreen;
     padding: 1vh 0;
     background-image: url('../../assets/library.jpg');
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -27,24 +25,30 @@
     align-items: center;
 }
 
-.hero-text-LightTheme{
-    font-size: calc(3vw + 3vh + 3vmin);
-    backdrop-filter: blur(3px);
-    border-radius: 33px;
-    font-weight: bold;
-    padding: 33px;
+.hero-text-DarkTheme{
     text-shadow: 2px 2px 4px rgba(200, 200, 200, 0.5);
     background: rgba(0, 0, 0, 0.15);
-}
-
-.hero-text-DarkTheme{
     font-size: calc(3vw + 3vh + 3vmin);
     backdrop-filter: blur(3px);
     border-radius: 33px;
     font-weight: bold;
     padding: 33px;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.hero-text-LightTheme{
     text-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
     background: rgba(255, 255, 255, 0.15);
+    font-size: calc(3vw + 3vh + 3vmin);
+    backdrop-filter: blur(3px);
+    border-radius: 33px;
+    font-weight: bold;
+    padding: 33px;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 #ad1 {
@@ -70,10 +74,75 @@
     grid-column: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     background-color: green;
     padding: 1vh 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+    
+#main-content::-webkit-scrollbar {
+    display: none;
+}
+
+#redirect-reading {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    height: 28vw;
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+}
+
+#redirect-reading .image {
+    width: 49%;
+    height: auto;
+    margin-right:9vw;
+    border: 3px solid #C46316;
+}
+
+#redirect-reading p {
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 50%;
+}
+
+#redirect-events {
+    display: flex;
+    text-align: left;
+    margin-bottom: 12vw;
+    height: 28vw;
+    overflow: hidden;
+}
+
+#redirect-events p {
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 50%;
+}
+
+#redirect-events .image2 {
+    height: 50%;
+    width: 111%;
+    object-fit: cover;
+    margin-left: 9vw;
+    border: 3px solid #C46316;
+}
+
+#redirect-about{
+    margin-bottom: 12vw;
+    height: 28vw;
+}
+
+.DarkTheme img {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.LightTheme img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #footer {
@@ -81,4 +150,69 @@
     grid-column: 1 / span 3;
     background-color: red;
     padding: 1vh 0;
+}
+
+@media (max-width: 1440px) {
+    .homepage {
+        grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(3fr, auto) minmax(2fr, auto) minmax(0.25fr, auto);
+    }
+
+    #ad1,
+    #ad2 {
+        grid-column: 2;
+    }
+
+    #ad1 {
+        grid-row: 3;
+    }
+
+    #hero-section {
+        grid-row: 2;
+        grid-column: 1 / -1;
+    }
+
+    #ad2 {
+        grid-row: 5;
+    }
+
+    #footer {
+        grid-row: 6;
+        grid-column: 1 / -1;
+    }
+
+    #main-content {
+        grid-row: 4;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    #redirect-reading,
+    #redirect-events,
+    #redirect-about {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6vw;
+        height: auto;
+    }
+
+    #redirect-reading {
+        margin-top: 6vw;
+    }
+
+    #redirect-reading .image, #redirect-events .image2 {
+        width: 50%;
+        height: 100%;
+        order: 0;
+        margin-left:  0;
+        margin-right: 0;
+    }
+
+    #redirect-reading .text,
+    #redirect-events .text,
+    #redirect-about .text {
+        order: 1;
+    }
 }
