@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import './styles/Homepage.css';
 
 function Homepage() {
   return (
@@ -15,38 +16,49 @@ function Homepage() {
       >
         <Navbar />
       </div>
-
+      {/* Hero section */}
+      <div
+        className="hero-section"
+        id="hero-section"
+      >
+        <p className="hero-text">Your Text Here</p>
+      </div>
+      <div
+        className="ad1"
+        id="ad1"
+      >
+        Ad 1
+      </div>
       {/* Main Content */}
       <div
         className="main-content"
         id="main-content"
       >
         <div
-          className="hero-section"
-          id="hero-section"
-        ></div>
-        <div
-          className="ad1"
-          id="ad1"
-        ></div>
-        <div
-          className="ad2"
-          id="ad2"
-        ></div>
-        <div
           className="redirect-reading"
           id="redirect-reading"
-        ></div>
+        >
+          Redirect Reading
+        </div>
         <div
           className="redirect-events"
           id="redirect-events"
-        ></div>
+        >
+          Redirect Events
+        </div>
         <div
           className="redirect-about"
           id="redirect-about"
-        ></div>
+        >
+          Redirect About
+        </div>
       </div>
-
+      <div
+        className="ad2"
+        id="ad2"
+      >
+        Ad 2
+      </div>
       {/* Footer  */}
       <div
         className="footer"
