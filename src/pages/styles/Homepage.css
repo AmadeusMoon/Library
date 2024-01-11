@@ -154,8 +154,20 @@
 #footer {
     grid-row: 6;
     grid-column: 1 / span 3;
-    background-color: red;
-    padding: 1vh 0;
+    bottom: 0;
+    max-height: fit-content;
+}
+
+.LightTheme #footer{
+    background-color: rgb(155, 155, 155, 0.06);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+
+.DarkTheme #footer{
+    background-color: rgb(155, 155, 155, 0.06);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: white;
 }
 
 @media (max-width: 1440px) {

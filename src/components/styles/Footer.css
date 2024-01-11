@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .authorship,
+footer .contact,
+footer .sitemap,
+footer .social-media,
+footer .newsletter,
+footer .search {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+}
+
+footer input[type="email"],
+footer input[type="text"] {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    border-radius: 33px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 2vw;
+    color: black;
+}
