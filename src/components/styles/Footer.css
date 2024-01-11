@@ -1,14 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 footer {
-    padding: 20px;
-    text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 4vw;
 }
 
 footer .authorship,
@@ -16,12 +9,13 @@ footer .contact,
 footer .sitemap,
 footer .social-media,
 footer .newsletter,
-footer .search {
-    margin-bottom: 20px;
+footer .privacy,
+footer .about {
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 footer a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -44,6 +38,20 @@ footer input[type="text"] {
 
 .social-media a {
     display: inline-block;
-    margin: 0 2vw;
+    margin-right: 2vw;
     color: black;
+}
+
+.contact a,
+.privacy a,
+.about a {
+    color: black;
+}
+
+#email::placeholder {
+    text-align: center;
+}
+
+.authorship {
+    font-size: small;
 }

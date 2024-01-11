@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles/Footer.css';
 
 function Footer() {
@@ -7,23 +8,25 @@ function Footer() {
         <p>© 2024 Your Name or Your Organization's Name</p>
       </div>
       <div className="contact">
-        <p>Email: your-email@example.com</p>
-        <p>Phone: +1-234-567-8901</p>
+        <Link to={'/contact'}>Contact</Link>
       </div>
-      <div className="social-media">
-        <a href="https://www.facebook.com/your-profile">Facebook</a>
-        <a href="https://www.twitter.com/your-profile">Twitter</a>
+      <div className="about">
+        <Link to={'/about'}>About</Link>
+      </div>
+      <div className="privacy">
+        <Link to={'/privacy'}>Privacy</Link>
       </div>
       <div className="newsletter">
         <form
           action="/subscribe"
           method="post"
         >
-          <label htmlFor="email">Subscribe to our newsletter:</label>
+          <label htmlFor="email">Subscribe:</label>
           <input
             type="email"
             id="email"
             name="email"
+            placeholder="Email"
           />
           <input
             type="submit"
@@ -31,22 +34,9 @@ function Footer() {
           />
         </form>
       </div>
-      <div className="search">
-        <form
-          action="/search"
-          method="get"
-        >
-          <label htmlFor="search">Search:</label>
-          <input
-            type="text"
-            id="search"
-            name="search"
-          />
-          <input
-            type="submit"
-            value="Search"
-          />
-        </form>
+      <div className="social-media">
+        <a href="https://www.facebook.com/your-profile">Facebook</a>
+        <a href="https://www.twitter.com/your-profile">Twitter</a>
       </div>
     </footer>
   );
