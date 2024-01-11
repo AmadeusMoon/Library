@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Aileron';
+    src: url('./assets/font/Aileron-Regular.otf') format('opentype');
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    user-select: none;
+    font-family: 'Aileron', Arial, Helvetica, sans-serif;
+}
+
+.App.DarkTheme {
+    background-color: black;
+    color:white;
+}
+
+.App.LightTheme {
+    background-color: white;
+    color:black;
+}
