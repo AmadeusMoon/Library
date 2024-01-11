@@ -12,6 +12,7 @@
     width: 2vw;
     height: 2vw;
     border-radius: 33px;
+    cursor: pointer;
 }
 
 #topside {
@@ -100,7 +101,7 @@
 #redirect-about{
     display: flex;
     background-color: rgb(155, 155, 155, 0.06);
-    margin-bottom: 3vw;
+    margin-bottom: 9vw;
     border-radius: 33px;
 }
 
@@ -220,4 +221,15 @@
         align-items: center;
         margin: 0;
     }
+}
+
+.visibility-reading,
+.visibility-events,
+.visibility-about {
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
 }
