@@ -66,8 +66,6 @@ function Homepage() {
         isVisible.map((_, index) => checkVisibility(elementRefs.current[index]))
       );
     };
-    console.log(isVisible);
-
     window.addEventListener('scroll', checkAllVisibility);
     return () => {
       window.removeEventListener('scroll', checkAllVisibility);

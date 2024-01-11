@@ -6,7 +6,7 @@
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 2vw;
@@ -17,15 +17,14 @@
 
 #topside {
     grid-row: 1;
-    grid-column: 1 / span 3;
-    background-color: blue;
-    padding: 1vh 0;
+    grid-column: 2;
+    top: 0;
 }
 
 #hero-section {
     grid-row: 2;
     grid-column: 1 / span 3;
-    padding: 1vh 0;
+    padding: 35vh 0;
     background-image: url('../../assets/library.jpg');
     background-size: cover;
     background-position: bottom;
@@ -159,13 +158,11 @@
 .LightTheme #footer{
     background-color: rgb(155, 155, 155, 0.06);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: black;
 }
 
 .DarkTheme #footer{
     background-color: rgb(155, 155, 155, 0.06);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    color: white;
 }
 
 @media (max-width: 1440px) {
@@ -216,6 +213,10 @@
 }
 
 @media (max-width: 500px) {
+    #topside {
+        grid-column: 1/-1;
+    }
+
     #ad1 {
         grid-row: 3;
     }
@@ -233,6 +234,20 @@
         grid-column: 1/-1;
         align-items: center;
         margin: 0;
+    }
+
+    .hero-text-DarkTheme {
+        text-shadow: 2px 2px 6px rgba(200, 200, 200, 1);
+        background: rgba(0, 0, 0, 0.15);
+        font-size: calc(2vw + 2vh + 2vmin);
+        backdrop-filter: blur(2px);
+    }
+    
+    .hero-text-LightTheme {
+        text-shadow: 2px 2px 6px rgba(50, 50, 50, 1);
+        background: rgba(255, 255, 255, 0.3);
+        font-size: calc(2vw + 2vh + 2vmin);
+        backdrop-filter: blur(2px);
     }
 }
 

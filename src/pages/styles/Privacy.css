@@ -1,40 +1,53 @@
 /* Dark theme */
 .privacy.DarkTheme {
     display: grid;
-        grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
-        grid-template-columns: 2fr 4fr 2fr;
-        background-color: #fff;
-        color: white;
-        gap: 3vh;
+    grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 3.8vh;
 }
 
 .privacy.DarkTheme .navbar {
     grid-row: 1;
+    grid-column: 2;
+    padding: 1em;
 }
 
 .privacy.DarkTheme .content {
-    margin: 3vw;
+    margin-top: 3vw;
+    margin-bottom: -6vw;
     grid-row: 2;
-    grid-column: 1/-1;
+    grid-column: 2;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200, 0.06);
 }
 
 .privacy.DarkTheme .footer {
     grid-column: 1/-1;
     grid-row: 3;
+    padding: 1em;
 }
 
 .privacy.DarkTheme h1,
 .privacy.DarkTheme h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #fff;
+    margin-bottom: 3vw;
+    color: #C46316;
 }
 
 .privacy.DarkTheme p {
-    font-size: 1.2em;
+    margin-bottom: 2vw;
     line-height: 1.6;
-    margin-bottom: 20px;
-    color: #ccc;
+}
+
+.privacy.DarkTheme ul li {
+    margin-bottom: 1em;
+}
+
+.DarkTheme #footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    max-height: fit-content;
 }
 
 /* Light theme */
@@ -42,51 +55,45 @@
     display: grid;
     grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
     grid-template-columns: 2fr 4fr 2fr;
-    background-color: #fff;
-    color: black;
-    gap: 3vh;
+    gap: 3.8vh;
 }
 
 .privacy.LightTheme .navbar {
     grid-row: 1;
-    grid-column: 1/-1;
+    grid-column: 2;
+    padding: 1em;
 }
 
 .privacy.LightTheme .content {
-    margin: 3vw;
+    margin-top: 3vw;
+    margin-bottom: -3vw;
     grid-row: 2;
-    grid-column: 1/-1;
+    grid-column: 2;
+    padding: 3vw;
+    border-radius: 33px;
+    background-color: rgb(155, 155, 155, 0.06);
 }
 
 .privacy.LightTheme .footer {
     grid-row: 3;
     grid-column: 1/-1;
+    padding: 1em;
+    background-color: #eee;
 }
 
 .privacy.LightTheme h1,
 .privacy.LightTheme h2 {
     text-align: center;
-    margin-bottom: 2vw;
-    color: #333;
+    margin-bottom: 3vw;
+    color: #C46316;
 }
 
-.privacy.LightTheme p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 2vw;
-    color: #666;
+.privacy.LightTheme ul li {
+    margin-bottom: 1.5em;
 }
 
 .LightTheme #footer {
     background-color: rgb(155, 155, 155, 0.06);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: black;
-    max-height: fit-content;
-}
-
-.DarkTheme #footer {
-    background-color: rgb(155, 155, 155, 0.06);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    color: white;
     max-height: fit-content;
 }
