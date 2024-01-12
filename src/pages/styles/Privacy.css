@@ -25,7 +25,6 @@
 .privacy.DarkTheme .footer {
     grid-column: 1/-1;
     grid-row: 3;
-    padding: 1em;
 }
 
 .privacy.DarkTheme h1,

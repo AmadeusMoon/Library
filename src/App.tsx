@@ -1,15 +1,15 @@
-import Homepage from './pages/Homepage';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Privacy from './pages/Privacy';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import BookListing from './pages/BookListing';
 import BookPreview from './pages/BookPreview';
 import BookReading from './pages/BookReading';
-import Events from './pages/Events';
-import './App.css';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from './state/state';
+import Homepage from './pages/Homepage';
+import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Events from './pages/Events';
+import About from './pages/About';
+import './App.css';
 
 function App() {
   const theme = useSelector((state: RootState) => state.theme.theme);

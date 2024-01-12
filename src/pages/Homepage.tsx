@@ -1,15 +1,15 @@
-import DarkThemeReading from '../assets/DarkThemeReading.jpg';
 import LightThemeReading from '../assets/LightThemeReading.jpg';
-import Logo from '../assets/logo.png';
+import DarkThemeReading from '../assets/DarkThemeReading.jpg';
+import { useEffect, useRef, useState } from 'react';
 import Event from '../assets/eventInquisitor.jpg';
 import About from '../assets/AmadeusDuCaine.jpg';
+import { useNavigate } from 'react-router-dom';
+import { RootState } from '../state/state';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useSelector } from 'react-redux';
-import { RootState } from '../state/state';
+import Logo from '../assets/logo.png';
 import './styles/Homepage.css';
-import { useNavigate } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
 
 function Homepage() {
   // Import theme from redux store

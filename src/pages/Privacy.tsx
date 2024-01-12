@@ -1,8 +1,8 @@
+import { RootState } from '../state/state';
 import { useSelector } from 'react-redux';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import './styles/Privacy.css';
-import { RootState } from '../state/state';
 
 function Privacy() {
   const theme = useSelector((state: RootState) => state.theme.theme);
@@ -23,9 +23,8 @@ function Privacy() {
               collection and handling of your personal information.
             </li>
             <li>
-              This applies across our main website,
-              https://librariumimperialis.com, as well as any other sites that
-              we own and operate.
+              This applies across our main website, as well as any other sites
+              that we own and operate.
             </li>
             <li>
               We understand the importance of maintaining your trust and

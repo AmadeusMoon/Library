@@ -1,5 +1,5 @@
-import { useSelector } from 'react-redux';
 import { RootState } from '../state/state';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.css';
 

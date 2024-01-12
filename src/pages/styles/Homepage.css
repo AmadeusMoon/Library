@@ -99,7 +99,7 @@
 #redirect-events,
 #redirect-about{
     display: flex;
-    background-color: rgb(155, 155, 155, 0.06);
+    background-color: rgb(155, 155, 155, 0.3);
     margin-bottom: 9vw;
     border-radius: 33px;
 }
@@ -132,14 +132,20 @@
 
 #redirect-reading .text-container {
     order: 2;
+    margin-top: 3vw;
+    margin-right: 3vw;
 }
 
 #redirect-events .text-container2 {
     order: 3;
+    margin-left: 3vw;
+    margin-top: 3vw;  
 }
 
 #redirect-about .text-container3 {
     order: 6;
+    margin-top: 3vw;
+    margin-right: 3vw;
 }
 
 .DarkTheme img {
@@ -156,13 +162,13 @@
 }
 
 .LightTheme #footer{
-    background-color: rgb(155, 155, 155, 0.06);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(155, 155, 155, 0.3) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
 }
 
 .DarkTheme #footer{
-    background-color: rgb(155, 155, 155, 0.06);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: rgb(155, 155, 155, 0.3) !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
 }
 
 @media (max-width: 1440px) {
