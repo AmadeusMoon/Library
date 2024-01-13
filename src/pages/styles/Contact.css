@@ -6,32 +6,3 @@
     gap: 3vh;
 }
 
-/* Navbar */
-.navbar {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-/* Body */
-.body-contact {
-    -ms-overflow-style: none;
-    flex-direction: column;
-    scrollbar-width: none;
-    overflow-x: hidden;
-    margin-right: 3vw;
-    grid-column: 1/-1;
-    overflow: scroll;
-    margin-left: 3vw;
-    display: flex;
-    grid-row: 2;
-}
-
-.body::-webkit-scrollbar {
-    display: none;
-}
-
-/* Footer */
-footer {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-}
