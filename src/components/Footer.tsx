@@ -1,9 +1,13 @@
+import { RootState } from '../state/state';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles/Footer.css';
 
 function Footer() {
+  const theme = useSelector((state: RootState) => state.theme.theme);
+
   return (
-    <footer>
+    <footer className={`footer-${theme}`}>
       <div className="authorship">
         <p>© 2024 Your Name or Your Organization's Name</p>
       </div>

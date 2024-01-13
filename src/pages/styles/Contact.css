@@ -1,0 +1,37 @@
+.contact-DarkTheme,
+.contact-LightTheme {
+    grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
+    grid-template-columns: 2fr 4fr 2fr;
+    display: grid;
+    gap: 3vh;
+}
+
+/* Navbar */
+.navbar {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Body */
+.body-contact {
+    -ms-overflow-style: none;
+    flex-direction: column;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    margin-right: 3vw;
+    grid-column: 1/-1;
+    overflow: scroll;
+    margin-left: 3vw;
+    display: flex;
+    grid-row: 2;
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Footer */
+footer {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}

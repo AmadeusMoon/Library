@@ -4,6 +4,16 @@ footer {
     max-height: 6vw;
 }
 
+.footer-LightTheme {
+    background-color: rgba(134, 134, 134, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-DarkTheme {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background-color: rgba(222, 222, 222, 0.5);
+}
+
 footer .authorship,
 footer .contact,
 footer .sitemap,

@@ -8,7 +8,6 @@ import { RootState } from '../state/state';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useSelector } from 'react-redux';
-import Logo from '../assets/logo.png';
 import './styles/Homepage.css';
 
 function Homepage() {
@@ -74,26 +73,15 @@ function Homepage() {
 
   return (
     <div
-      className="homepage"
+      className={`homepage-${theme}`}
       id="homepage"
     >
-      <div
-        className="topside"
-        id="topside"
-      >
-        <img
-          src={Logo}
-          alt={`Page Logo ( a lectern with an open book )`}
-          className="logo"
-          onClick={() => redirect('/')}
-        />
-        <Navbar />
-      </div>
+      <Navbar />
       <div
         className="hero-section"
         id="hero-section"
       >
-        <p className={`hero-text-${theme}`}>Librarium Imperialis</p>
+        <p className={`hero-text`}>Librarium Imperialis</p>
       </div>
       <div
         className="ad1"
@@ -102,15 +90,15 @@ function Homepage() {
         Ad 1
       </div>
       <div
-        className="main-content"
-        id="main-content"
+        className="body"
+        id="body-homepage"
       >
         <div
           ref={elementRefs.current[0]}
           className={`visibility-reading ${isVisible[0] ? 'visible' : ''}`}
         >
           <div
-            className={`redirect-reading-${theme}`}
+            className={`redirect-reading`}
             id="redirect-reading"
           >
             <img
@@ -267,12 +255,7 @@ function Homepage() {
       >
         Ad 2
       </div>
-      <div
-        className="footer"
-        id="footer"
-      >
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

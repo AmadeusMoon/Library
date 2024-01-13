@@ -1,13 +1,23 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 1em;
+    justify-content: space-evenly;
     border-radius: 20px;
+    display: flex;
+    padding: 1em;
+}
+
+.navbar.LightTheme {
+    background-color: rgba(134, 134, 134, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar.DarkTheme {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: rrgba(222, 222, 222, 0.5);
 }
 
 .navbar a {
-    text-decoration: none;
     transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .navbar a:link,
@@ -19,12 +29,3 @@
     color: #007bff;
 }
 
-.navbar.LightTheme {
-    background-color: rgb(155, 155, 155, 0.3);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.navbar.DarkTheme {
-    background-color: rgb(155, 155, 155, 0.3);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}

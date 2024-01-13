@@ -7,9 +7,15 @@ import './styles/Privacy.css';
 function Privacy() {
   const theme = useSelector((state: RootState) => state.theme.theme);
   return (
-    <div className={`privacy ${theme}`}>
+    <div
+      className={`privacy-${theme}`}
+      id="privacy"
+    >
       <Navbar />
-      <div className="content">
+      <div
+        className="body"
+        id="body-privacy"
+      >
         <h1>Privacy Policy for Librarium Imperialis</h1>
         <div className="section">
           <h2>Your Privacy</h2>
@@ -101,12 +107,7 @@ function Privacy() {
           </ul>
         </div>
       </div>
-      <div
-        className="footer"
-        id="footer"
-      >
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

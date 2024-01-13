@@ -1,98 +1,69 @@
-/* Dark theme */
-.privacy.DarkTheme {
-    display: grid;
+/* Privacy page */
+.privacy-DarkTheme,
+.privacy-LightTheme {
     grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
     grid-template-columns: 2fr 4fr 2fr;
+    display: grid;
     gap: 3.8vh;
 }
 
-.privacy.DarkTheme .navbar {
-    grid-row: 1;
+/* Navbar */
+.privacy-DarkTheme .navbar,
+.privacy-LightTheme .navbar {
     grid-column: 2;
     padding: 1em;
+    grid-row: 1;
 }
 
-.privacy.DarkTheme .content {
+/* Body */
+.privacy-DarkTheme .body,
+.privacy-LightTheme .body {
+    border-radius: 33px;
+    margin-bottom: 3vw;
     margin-top: 3vw;
-    margin-bottom: -6vw;
-    grid-row: 2;
     grid-column: 2;
     padding: 2em;
-    border-radius: 10px;
-    background-color: rgb(200, 200, 200, 0.06);
+    grid-row: 2;
 }
 
-.privacy.DarkTheme .footer {
+.privacy-DarkTheme .body {
+    background-color: rgba(222, 222, 222, 0.5);
+}
+
+.privacy-LightTheme .body {
+    background-color: rgba(134, 134, 134, 0.5);
+    padding: 3vw;
+}
+
+/* Footer */
+.privacy-DarkTheme footer,
+.privacy-LightTheme footer {
+    max-height: fit-content;
     grid-column: 1/-1;
     grid-row: 3;
 }
 
-.privacy.DarkTheme h1,
-.privacy.DarkTheme h2 {
+/* Headings */
+.privacy-DarkTheme h1,
+.privacy-DarkTheme h2,
+.privacy-LightTheme h1,
+.privacy-LightTheme h2 {
     text-align: center;
     margin-bottom: 3vw;
-    color: #C46316;
+    color: #a46646;
 }
 
-.privacy.DarkTheme p {
+/* Paragraphs */
+.privacy-DarkTheme p {
     margin-bottom: 2vw;
     line-height: 1.6;
 }
 
-.privacy.DarkTheme ul li {
+/* List Items */
+.privacy-DarkTheme ul li {
     margin-bottom: 1em;
 }
 
-.DarkTheme #footer {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    max-height: fit-content;
-}
-
-/* Light theme */
-.privacy.LightTheme {
-    display: grid;
-    grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
-    grid-template-columns: 2fr 4fr 2fr;
-    gap: 3.8vh;
-}
-
-.privacy.LightTheme .navbar {
-    grid-row: 1;
-    grid-column: 2;
-    padding: 1em;
-}
-
-.privacy.LightTheme .content {
-    margin-top: 3vw;
-    margin-bottom: -3vw;
-    grid-row: 2;
-    grid-column: 2;
-    padding: 3vw;
-    border-radius: 33px;
-    background-color: rgb(155, 155, 155, 0.06);
-}
-
-.privacy.LightTheme .footer {
-    grid-row: 3;
-    grid-column: 1/-1;
-    padding: 1em;
-    background-color: #eee;
-}
-
-.privacy.LightTheme h1,
-.privacy.LightTheme h2 {
-    text-align: center;
-    margin-bottom: 3vw;
-    color: #C46316;
-}
-
-.privacy.LightTheme ul li {
+.privacy-LightTheme ul li {
     margin-bottom: 1.5em;
-}
-
-.LightTheme #footer {
-    background-color: rgb(155, 155, 155, 0.06);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-height: fit-content;
 }
