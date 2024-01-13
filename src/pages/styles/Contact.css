@@ -1,8 +1,1 @@
-.contact-DarkTheme,
-.contact-LightTheme {
-    grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
-    grid-template-columns: 2fr 4fr 2fr;
-    display: grid;
-    gap: 3vh;
-}
 
