@@ -13,7 +13,7 @@ function Privacy() {
     >
       <Navbar />
       <div
-        className="body"
+        className="body-privacy"
         id="body-privacy"
       >
         <h1>Privacy Policy for Librarium Imperialis</h1>

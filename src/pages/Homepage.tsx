@@ -90,7 +90,7 @@ function Homepage() {
         Ad 1
       </div>
       <div
-        className="body"
+        className="body-homepage"
         id="body-homepage"
       >
         <div
@@ -167,15 +167,6 @@ function Homepage() {
                 The Inquisition has arranged a special agenda for you and your
                 fellow guests, where you will be honoured with the finest gifts
                 and accolades.
-              </p>
-
-              <h3>Acceptance</h3>
-              <p>
-                To accept this invitation, you are expected to contact your
-                nearest branch of the Eclessiarchy and present them with the
-                contents of the invitation. There, you will receive further
-                details and instructions. Do not neglect this offer, for the
-                Emperor's blessing is rare and precious.
               </p>
 
               <h2>Remember, the Emperor protects.</h2>

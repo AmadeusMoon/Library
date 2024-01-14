@@ -4,6 +4,7 @@
     grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
     grid-template-columns: 2fr 4fr 2fr;
     display: grid;
+    height: 100vh;
     gap: 3.8vh;
 }
 
@@ -16,21 +17,22 @@
 }
 
 /* Body */
-.privacy-DarkTheme .body,
-.privacy-LightTheme .body {
+.privacy-DarkTheme .body-privacy,
+.privacy-LightTheme .body-privacy {
+    letter-spacing: 0.06em;
     border-radius: 33px;
-    margin-bottom: 3vw;
-    margin-top: 3vw;
-    grid-column: 2;
+    grid-column: 1/-1;
+    line-height: 1.8;
     padding: 2em;
+    margin: 3vh;
     grid-row: 2;
 }
 
-.privacy-DarkTheme .body {
+.privacy-DarkTheme .body-privacy {
     background-color: rgba(222, 222, 222, 0.5);
 }
 
-.privacy-LightTheme .body {
+.privacy-LightTheme .body-privacy {
     background-color: rgba(134, 134, 134, 0.5);
     padding: 3vw;
 }
@@ -49,21 +51,29 @@
 .privacy-LightTheme h1,
 .privacy-LightTheme h2 {
     text-align: center;
-    margin-bottom: 3vw;
     color: #a46646;
+    margin: 3vh;
 }
 
 /* Paragraphs */
 .privacy-DarkTheme p {
-    margin-bottom: 2vw;
-    line-height: 1.6;
+    margin: 2vh;
 }
 
-/* List Items */
-.privacy-DarkTheme ul li {
-    margin-bottom: 1em;
-}
-
+.privacy-DarkTheme ul li,
 .privacy-LightTheme ul li {
-    margin-bottom: 1.5em;
+    margin: 1.5em;
+}
+
+/* First media query */
+@media (max-width: 1440px) {
+    
+}
+
+/* Second media query */
+@media (max-width: 990px) {
+    .privacy-DarkTheme .navbar,
+    .privacy-LightTheme .navbar {
+        grid-column: 1/-1;
+    }
 }

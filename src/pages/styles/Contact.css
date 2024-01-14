@@ -1,1 +1,91 @@
+/* Contact page */
+.contact-LightTheme,
+.contact-DarkTheme {
+    grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
+    grid-template-columns: 2fr 4fr 2fr;
+    display: grid;
+    gap: 3.8vh;
+}
 
+/* Navbar */
+.contact-LightTheme .navbar,
+.contact-DarkTheme .navbar {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Body */
+.contact-LightTheme .body-contact,
+.contact-DarkTheme .body-contact {
+    -ms-overflow-style: none;
+    justify-content: center;
+    flex-direction: column;
+    scrollbar-width: none;
+    border-radius: 33px;
+    overflow-x: hidden;
+    grid-column: 1/-1;
+    display: flex;
+    margin: 3vw;
+    grid-row: 2;
+}
+
+.contact-LightTheme .body-contact .text-section-contact,
+.contact-DarkTheme .body-contact .text-section-contact {
+    letter-spacing: 0.06em;
+    line-height: 1.8;
+    margin: 3vw;
+}
+
+.contact-LightTheme .body-contact .text-section-contact h1,
+.contact-DarkTheme .body-contact .text-section-contact h1 {
+    text-align: center;
+    margin: 3vh
+}
+
+.contact-DarkTheme ul li,
+.contact-LightTheme ul li {
+    margin: 1.5em;
+}
+
+.contact-LightTheme .body-contact {
+    background-color: rgba(134, 134, 134, 0.5);
+}
+
+.contact-DarkTheme .body-contact {
+    background-color: rgba(222, 222, 222, 0.5);
+}
+
+.contact .body-contact::-webkit-scrollbar {
+    display: none;
+}
+
+.contact-form-selector {
+    justify-content: center;
+    display: flex;
+}
+
+/* Footer */
+.contact-LightTheme footer,
+.contact-DarkTheme footer {
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+
+/* Contact form */
+
+#contact-form {
+    margin: 3vw;
+}
+
+/* First media query */
+@media (max-width: 1440px) {
+    
+}
+
+/* Second media query */
+@media (max-width: 990px) {
+    .contact-LightTheme .navbar,
+    .contact-DarkTheme .navbar {
+        grid-column: 1/-1;
+    }
+}

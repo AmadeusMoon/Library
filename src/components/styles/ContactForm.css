@@ -1,0 +1,102 @@
+/* Feedback */
+.feedback-form {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: -4vw;
+    display: grid;
+    gap: 3vw;
+}
+
+/* Checkboxes */
+.feedback-checkboxes {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: red;
+    border-radius: 33px;
+    display: grid;
+}
+
+.feedback-checkboxes label {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 1vw;
+}
+
+.feedback-checkboxes input[type="checkbox"] {
+    margin: 1vw;
+}
+
+/* Slider */
+.message-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.message-container label {
+    margin-bottom: 1vw;
+}
+
+.message-boxes {
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 7vw;
+    margin-left: -3vw;
+    margin-right: 3.5vw;
+}
+
+.message-boxes textarea {
+    justify-content: flex-start;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    word-break: break-all;
+    border-radius: 33px;
+    text-align: left;
+    overflow-y: auto;
+    max-width: 33vw;
+    display: flex;
+    height: 12vw;
+    padding: 1vw;
+    width: 24vw;
+}
+
+/* Email */
+.feedback-form .column-3 .email-container {
+    order: 1;
+}
+
+.feedback-form .email-container label {
+    margin-right: 1vw;
+}
+
+.feedback-form .email-container input {
+    border-radius: 33px;
+}
+
+/* Submit Button */
+.feedback-form .column-3 .submit-button {
+    border-radius: 33px;
+    border: 1px outset;
+    margin-top: 1vw;
+    order: 2;
+}
+
+.feedback-form .column-3 .submit-button:hover {
+    border: 1px inset;
+}
+
+/* General */
+.feedback-checkboxes,
+.message-container,
+.feedback-form .email {
+    margin: 3vw;
+}
+
+/* Column 3 */
+.feedback-form .column-3 {
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 3vw;
+    display: flex;
+}
