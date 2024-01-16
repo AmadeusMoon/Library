@@ -1,7 +1,7 @@
 /* Feedback */
 .feedback-form {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     grid-template-columns: repeat(3, 1fr);
-    margin-left: -4vw;
     display: grid;
     gap: 3vw;
 }
@@ -9,8 +9,8 @@
 /* Checkboxes */
 .feedback-checkboxes {
     grid-template-columns: repeat(3, 1fr);
-    background-color: red;
     border-radius: 33px;
+    grid-column: 1;
     display: grid;
 }
 
@@ -31,7 +31,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 12vw;
+    grid-column: 2;
     display: flex;
+    grid-row: 1;
 }
 
 .message-container label {
@@ -41,13 +44,10 @@
 .message-boxes {
     box-sizing: border-box;
     text-align: center;
-    margin-top: 7vw;
-    margin-left: -3vw;
-    margin-right: 3.5vw;
+    margin-top: 3vw; 
 }
 
 .message-boxes textarea {
-    justify-content: flex-start;
     overflow-wrap: break-word;
     box-sizing: border-box;
     word-break: break-all;
@@ -55,7 +55,6 @@
     text-align: left;
     overflow-y: auto;
     max-width: 33vw;
-    display: flex;
     height: 12vw;
     padding: 1vw;
     width: 24vw;
@@ -78,7 +77,9 @@
 .feedback-form .column-3 .submit-button {
     border-radius: 33px;
     border: 1px outset;
+    margin-left: 4.4vw;
     margin-top: 1vw;
+    width: 14.3vw;
     order: 2;
 }
 
@@ -97,6 +98,7 @@
 .feedback-form .column-3 {
     justify-content: center;
     flex-direction: column;
-    margin-right: 3vw;
-    display: flex;
+    margin-bottom: 3vw;
+    grid-column: 2;
+    grid-row: 2;
 }
