@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../state/state';
 import { themeChange } from '../state/reducers/theme';
+import { RootState } from '../state/state';
 import './styles/ThemeChanger.css';
 
 function ThemeChanger() {

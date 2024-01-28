@@ -2,12 +2,12 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import BookListing from './pages/booklisting/BookListing';
 import BookPreview from './pages/bookpreview/BookPreview';
 import BookReading from './pages/bookreading/BookReading';
-import { useSelector } from 'react-redux';
-import { RootState } from './state/state';
 import Homepage from './pages/homepage/Homepage';
 import Contact from './pages/contact/Contact';
 import Privacy from './pages/privacy/Privacy';
 import Events from './pages/events/Events';
+import { useSelector } from 'react-redux';
+import { RootState } from './state/state';
 import About from './pages/about/About';
 import './App.css';
 

@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom';
 import Event from '../../../assets/eventInquisitor.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function RedirectEvents() {
   // Import navigate and set it to variable

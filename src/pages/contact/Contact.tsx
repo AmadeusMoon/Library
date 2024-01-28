@@ -1,11 +1,11 @@
-import { RootState } from '../../state/state';
-import { useSelector } from 'react-redux';
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
-import './styles/Contact.css';
-import React, { useState } from 'react';
 import ContactForm from './components/ContactForm';
 import ContactText from './components/ContactText';
+import { RootState } from '../../state/state';
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
+import { useSelector } from 'react-redux';
+import React, { useState } from 'react';
+import './styles/Contact.css';
 
 function Contact() {
   const theme = useSelector((state: RootState) => state.theme.theme);

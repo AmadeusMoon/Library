@@ -1,8 +1,8 @@
 import { RootState } from '../state/state';
 import { useSelector } from 'react-redux';
+import ThemeChanger from './ThemeChanger';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.css';
-import ThemeChanger from './ThemeChanger';
 
 function Navbar() {
   const theme = useSelector((state: RootState) => state.theme.theme);

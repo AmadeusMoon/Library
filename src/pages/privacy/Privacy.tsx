@@ -1,7 +1,7 @@
 import { RootState } from '../../state/state';
-import { useSelector } from 'react-redux';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import { useSelector } from 'react-redux';
 import './styles/Privacy.css';
 
 function Privacy() {

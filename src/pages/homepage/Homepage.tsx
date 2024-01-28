@@ -1,15 +1,15 @@
+import RedirectReading from './components/RedirectReading';
+import RedirectEvents from './components/RedirectEvents';
+import RedirectAbout from './components/RedirectAbout';
 import { useEffect, useRef, useState } from 'react';
+import HeroSection from './components/HeroSection';
 import { RootState } from '../../state/state';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { useSelector } from 'react-redux';
 import './styles/Homepage.css';
-import HeroSection from './components/HeroSection';
 import AD2 from '../AD2';
 import AD1 from '../AD1';
-import RedirectReading from './components/RedirectReading';
-import RedirectEvents from './components/RedirectEvents';
-import RedirectAbout from './components/RedirectAbout';
 
 function Homepage() {
   // Import theme from redux store

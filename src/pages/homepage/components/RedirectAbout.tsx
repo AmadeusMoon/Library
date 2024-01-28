@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom';
 import About from '../../../assets/AmadeusDuCaine.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function RedirectAbout() {
   // Import navigate and set it to variable

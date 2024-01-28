@@ -1,8 +1,8 @@
 import LightThemeReading from '../../../assets/LightThemeReading.jpg';
 import DarkThemeReading from '../../../assets/DarkThemeReading.jpg';
+import { RootState } from '../../../state/state';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../../state/state';
 
 function RedirectReading() {
   const theme = useSelector((state: RootState) => state.theme.theme);
