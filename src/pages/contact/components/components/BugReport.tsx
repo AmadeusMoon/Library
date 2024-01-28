@@ -1,8 +1,8 @@
-import './styles/BugReport.css';
-import TOU from './components/TOU';
-import ImageUpload from './components/ImageUpload';
 import IssueMessage from './components/IssueMessage';
 import PagesSelector from './components/PagesSelect';
+import ImageUpload from './components/ImageUpload';
+import TOU from './components/TOU';
+import './styles/BugReport.css';
 
 function BugReport() {
   return (

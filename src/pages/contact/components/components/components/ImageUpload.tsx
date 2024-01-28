@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import './styles/ImageUpload.css';
+import { useState } from 'react';
 
 function ImageUpload() {
   const [error, setError] = useState('');

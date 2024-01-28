@@ -1,7 +1,7 @@
-import './styles/ContactForm.css';
 import FeedbackForm from './components/FeedbackForm';
 import BugReport from './components/BugReport';
 import Contact from './components/Contact';
+import './styles/ContactForm.css';
 
 function ContactForm({ formType }: { formType: string }) {
   return formType === 'Feedback' ? (

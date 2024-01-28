@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import Slider from './components/Slider';
+import { useState } from 'react';
 
 function FeedbackForm() {
   // State for values
