@@ -1,0 +1,17 @@
+.ThemeChanger-LightTheme,
+.ThemeChanger-DarkTheme{
+    border-radius: 33px;
+    position: relative;
+    max-height: 3vw;
+    max-width: 3vw;
+}
+
+.ThemeChanger-LightTheme{
+    background-color: white;
+    border-color: black;
+}
+
+.ThemeChanger-DarkTheme{
+    background-color: black;
+    border-color: white;
+}

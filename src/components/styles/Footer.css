@@ -5,13 +5,23 @@ footer {
 }
 
 .footer-LightTheme {
-    background-color: rgba(134, 134, 134, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(242, 242, 242, 0.6);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.footer-LightTheme a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-DarkTheme a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-DarkTheme {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    background-color: rgba(222, 222, 222, 0.5);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    background-color: rgb(003, 003, 003);
 }
 
 footer .authorship,
@@ -21,12 +31,8 @@ footer .social-media,
 footer .newsletter,
 footer .privacy,
 footer .about {
-    margin: 1em;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
+    margin: 0.6em;
+    text-align: center;
 }
 
 footer form {
@@ -35,15 +41,22 @@ footer form {
 }
 
 footer input[type="email"],
-footer input[type="text"] {
+footer input[type="text"]{
     margin-right: 0.5em;
     margin-left: 0.5em;
     border-radius: 33px;
 }
 
+footer input[type='submit']{
+    border-radius: 33px;
+    padding: 3px;
+}
+
 .social-media a {
-    display: flex;
     justify-content: space-between;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+    display: flex;
 }
 
 #email::placeholder {
@@ -67,6 +80,6 @@ footer input[type="text"] {
     }
 
     .social-media a {
-        margin: 0.5em;
+        margin: 0.5em;   
     }
 }

@@ -1,3 +1,5 @@
+import './styles/BookListing.css';
+
 function BookListing() {
   return <div></div>;
 }

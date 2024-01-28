@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import './styles/ContactForm.css';
+import { useState } from 'react';
 import Slider from './Slider';
 
 function ContactForm({ formType }: { formType: string }) {

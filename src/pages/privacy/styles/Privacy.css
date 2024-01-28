@@ -4,7 +4,6 @@
     grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
     grid-template-columns: 2fr 4fr 2fr;
     display: grid;
-    height: 100vh;
     gap: 3.8vh;
 }
 
@@ -16,25 +15,26 @@
     grid-row: 1;
 }
 
-/* Body */
-.privacy-DarkTheme .body-privacy,
-.privacy-LightTheme .body-privacy {
+/* Content */
+.privacy-DarkTheme .content-privacy,
+.privacy-LightTheme .content-privacy {
     letter-spacing: 0.06em;
     border-radius: 33px;
     grid-column: 1/-1;
     line-height: 1.8;
-    padding: 2em;
+    padding: 3vw;
     margin: 3vh;
     grid-row: 2;
 }
 
-.privacy-DarkTheme .body-privacy {
-    background-color: rgba(222, 222, 222, 0.5);
+.privacy-DarkTheme .content-privacy {
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    background-color: rgb(003, 003, 003);
 }
 
-.privacy-LightTheme .body-privacy {
-    background-color: rgba(134, 134, 134, 0.5);
-    padding: 3vw;
+.privacy-LightTheme .content-privacy {
+    background-color: rgba(242, 242, 242, 0.6);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
