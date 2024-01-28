@@ -1,17 +1,24 @@
 /* Feedback */
 .feedback-form {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1fr);
+    border-radius: 33px;
     display: grid;
-    gap: 3vw;
+    width: 33vw;
+}
+
+.DarkTheme .feedback-form {
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.LightTheme .feedback-form {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Checkboxes */
 .feedback-checkboxes {
     grid-template-columns: repeat(3, 1fr);
-    border-radius: 33px;
-    grid-column: 1;
     display: grid;
+    grid-row: 1;
 }
 
 .feedback-checkboxes label {
@@ -32,9 +39,8 @@
     align-items: center;
     text-align: center;
     height: 12vw;
-    grid-column: 2;
     display: flex;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .message-container label {
@@ -42,9 +48,10 @@
 }
 
 .message-boxes {
-    box-sizing: border-box;
-    text-align: center;
-    margin-top: 3vw; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+    display: flex;
 }
 
 .message-boxes textarea {
@@ -52,6 +59,7 @@
     box-sizing: border-box;
     word-break: break-all;
     border-radius: 33px;
+    margin-bottom: 3vw;
     text-align: left;
     overflow-y: auto;
     max-width: 33vw;
@@ -61,8 +69,18 @@
 }
 
 /* Email */
-.feedback-form .column-3 .email-container {
-    order: 1;
+.feedback-form .column-3 .email-container{
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+}
+
+.feedback-form .column-3 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vw;
+    display: flex;
+    width: 100%;
 }
 
 .feedback-form .email-container label {
@@ -76,29 +94,19 @@
 /* Submit Button */
 .feedback-form .column-3 .submit-button {
     border-radius: 33px;
-    border: 1px outset;
-    margin-left: 4.4vw;
-    margin-top: 1vw;
-    width: 14.3vw;
-    order: 2;
-}
-
-.feedback-form .column-3 .submit-button:hover {
-    border: 1px inset;
+    margin-left: 1vw;
+    padding: 1px;
 }
 
 /* General */
 .feedback-checkboxes,
 .message-container,
 .feedback-form .email {
-    margin: 3vw;
+    margin: 1vw;
 }
 
-/* Column 3 */
-.feedback-form .column-3 {
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 3vw;
-    grid-column: 2;
-    grid-row: 2;
+@media (max-width:1440px){
+    .feedback-form{
+        width: fit-content;
+    }
 }

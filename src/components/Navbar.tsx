@@ -7,11 +7,32 @@ import './styles/Navbar.css';
 function Navbar() {
   const theme = useSelector((state: RootState) => state.theme.theme);
   return (
-    <div className={`navbar ${theme}`}>
+    <div
+      className={`navbar ${theme}`}
+      id="navbar"
+    >
       <ThemeChanger />
-      <Link to={'/'}>Homepage</Link>
-      <Link to={'/booklisting'}>Books</Link>
-      <Link to={'/events'}>Events</Link>
+      <Link
+        className="navbar-link-to-homepage"
+        id="navbarlinktohomepage"
+        to={'/'}
+      >
+        Homepage
+      </Link>
+      <Link
+        className="navbar-link-to-booklisting"
+        id="navbarlinktobooklisting"
+        to={'/booklisting'}
+      >
+        Books
+      </Link>
+      <Link
+        className="navbar-link-to-events"
+        id="navbarlinktoevents"
+        to={'/events'}
+      >
+        Events
+      </Link>
     </div>
   );
 }

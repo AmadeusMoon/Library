@@ -37,7 +37,7 @@ function Slider({ components }: { components: Array<JSX.Element> }) {
       <button
         className="left"
         onClick={goLeft}
-        style={!selected ? { left: '-1vw' } : { left: '-1vw' }}
+        style={!selected ? { left: '-1vw' } : { left: '-2vw' }}
       >
         ◀
       </button>
@@ -45,7 +45,7 @@ function Slider({ components }: { components: Array<JSX.Element> }) {
       <button
         className="right"
         onClick={goRight}
-        style={!selected ? { right: '6vw' } : { right: '-1vw' }}
+        style={!selected ? { right: '-1vw' } : { right: '-2vw' }}
       >
         ▶
       </button>

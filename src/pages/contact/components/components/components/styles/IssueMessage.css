@@ -1,0 +1,12 @@
+.issue-text-label{
+    justify-content: center;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+    display: flex;
+}
+
+.issue-text-area{
+    border-radius: 33px;
+    height: 12vw;
+    width: 33vw;
+}

@@ -15,3 +15,11 @@
     background-color: black;
     border-color: white;
 }
+
+@media (max-width: 995px) {
+    .ThemeChanger-LightTheme,
+    .ThemeChanger-DarkTheme {
+        max-height: 6vw;
+        max-width: 6vw;
+    }
+}

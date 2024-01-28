@@ -8,9 +8,10 @@ import React, { useState } from 'react';
 import './styles/Contact.css';
 
 function Contact() {
+  // Insert theme state
   const theme = useSelector((state: RootState) => state.theme.theme);
-  // Form selector
-  type Option = 'Feedback' | 'Bugs' | 'Contact';
+  // Type of Form options
+  type Option = 'Feedback' | 'Bug Report' | 'Contact';
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [formType, setFormType] = useState<string | ''>('');
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -37,10 +38,34 @@ function Contact() {
             value={selectedOption || ''}
             onChange={handleChange}
           >
-            <option value="">Select an option</option>
-            <option value="Feedback">Feedback</option>
-            <option value="Bugs">Bugs</option>
-            <option value="Contact">Contact</option>
+            <option
+              className="select-an-option"
+              id="selectanoption"
+              value="Select an option"
+            >
+              Select an option
+            </option>
+            <option
+              className="Feedback"
+              id="feedback"
+              value="Feedback"
+            >
+              Feedback
+            </option>
+            <option
+              className="bug-report"
+              id="bugreport"
+              value="Bug Report"
+            >
+              Bug Report
+            </option>
+            <option
+              className="Contact"
+              id="contact"
+              value="Contact"
+            >
+              Contact
+            </option>
           </select>
         </div>
         <div
