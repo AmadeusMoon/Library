@@ -1,7 +1,7 @@
-import { RootState } from '../state/state';
+import { RootState } from '../../state/state';
 import { useSelector } from 'react-redux';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
 import './styles/Privacy.css';
 
 function Privacy() {
@@ -13,8 +13,8 @@ function Privacy() {
     >
       <Navbar />
       <div
-        className="body-privacy"
-        id="body-privacy"
+        className="content-privacy"
+        id="content-privacy"
       >
         <h1>Privacy Policy for Librarium Imperialis</h1>
         <div className="section">

@@ -14,9 +14,9 @@
     grid-row: 1;
 }
 
-/* Body */
-.contact-LightTheme .body-contact,
-.contact-DarkTheme .body-contact {
+/* Content */
+.contact-LightTheme .content-contact,
+.contact-DarkTheme .content-contact {
     -ms-overflow-style: none;
     justify-content: center;
     flex-direction: column;
@@ -29,15 +29,15 @@
     grid-row: 2;
 }
 
-.contact-LightTheme .body-contact .text-section-contact,
-.contact-DarkTheme .body-contact .text-section-contact {
+.contact-LightTheme .content-contact .text-section-contact,
+.contact-DarkTheme .content-contact .text-section-contact {
     letter-spacing: 0.06em;
     line-height: 1.8;
     margin: 3vw;
 }
 
-.contact-LightTheme .body-contact .text-section-contact h1,
-.contact-DarkTheme .body-contact .text-section-contact h1 {
+.contact-LightTheme .content-contact .text-section-contact h1,
+.contact-DarkTheme .content-contact .text-section-contact h1 {
     text-align: center;
     margin: 3vh
 }
@@ -47,15 +47,17 @@
     margin: 1.5em;
 }
 
-.contact-LightTheme .body-contact {
-    background-color: rgba(134, 134, 134, 0.5);
+.contact-LightTheme .content-contact {
+    background-color: rgba(242, 242, 242, 0.6);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-.contact-DarkTheme .body-contact {
-    background-color: rgba(222, 222, 222, 0.5);
+.contact-DarkTheme .content-contact {
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    background-color: rgb(003, 003, 003);
 }
 
-.contact .body-contact::-webkit-scrollbar {
+.contact .content-contact::-webkit-scrollbar {
     display: none;
 }
 

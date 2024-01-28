@@ -14,11 +14,11 @@ function Footer() {
       <div className="contact">
         <Link to={'/contact'}>Contact</Link>
       </div>
-      <div className="about">
-        <Link to={'/about'}>About</Link>
-      </div>
       <div className="privacy">
         <Link to={'/privacy'}>Privacy</Link>
+      </div>
+      <div className="about">
+        <Link to={'/about'}>About</Link>
       </div>
       <div className="newsletter">
         <form

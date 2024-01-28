@@ -1,14 +1,14 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import BookListing from './pages/BookListing';
-import BookPreview from './pages/BookPreview';
-import BookReading from './pages/BookReading';
+import BookListing from './pages/booklisting/BookListing';
+import BookPreview from './pages/bookpreview/BookPreview';
+import BookReading from './pages/bookreading/BookReading';
 import { useSelector } from 'react-redux';
 import { RootState } from './state/state';
-import Homepage from './pages/Homepage';
-import Contact from './pages/Contact';
-import Privacy from './pages/Privacy';
-import Events from './pages/Events';
-import About from './pages/About';
+import Homepage from './pages/homepage/Homepage';
+import Contact from './pages/contact/Contact';
+import Privacy from './pages/privacy/Privacy';
+import Events from './pages/events/Events';
+import About from './pages/about/About';
 import './App.css';
 
 function App() {
