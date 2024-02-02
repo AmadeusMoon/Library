@@ -2,8 +2,15 @@
 .ThemeChanger-DarkTheme{
     border-radius: 33px;
     position: relative;
+    cursor: pointer;
     max-height: 3vw;
     max-width: 3vw;
+}
+
+.ThemeChanger-LightTheme:hover,
+.ThemeChanger-DarkTheme:hover{  
+    border-color: #e97451;
+    transition: all 24ms ease-in;
 }
 
 .ThemeChanger-LightTheme{

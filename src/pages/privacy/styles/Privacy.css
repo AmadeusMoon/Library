@@ -29,11 +29,9 @@
 
 .privacy-DarkTheme .content-privacy {
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
-    background-color: rgb(003, 003, 003);
 }
 
 .privacy-LightTheme .content-privacy {
-    background-color: rgba(242, 242, 242, 0.6);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -47,11 +45,12 @@
 
 /* Headings */
 .privacy-DarkTheme h1,
-.privacy-DarkTheme h2,
+.privacy-DarkTheme h4,
 .privacy-LightTheme h1,
-.privacy-LightTheme h2 {
+.privacy-LightTheme h4 {
+    text-decoration: underline;
     text-align: center;
-    color: #a46646;
+    color: #e97451;
     margin: 3vh;
 }
 

@@ -1,18 +1,7 @@
 .navbar {
     justify-content: space-evenly;
-    border-radius: 20px;
+    background-color: none;
     display: flex;
-    padding: 1em;
-}
-
-.navbar.LightTheme {
-    background-color: rgba(242, 242, 242, 0.6);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.navbar.DarkTheme {
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
-    background-color: rgb(003, 003, 003);
 }
 
 .navbar a {
@@ -26,5 +15,6 @@
 }
 
 .navbar a:hover {
-    color: #007bff;
+    color:  #e97451;
+    transition: all 0.15s ease-in;
 }

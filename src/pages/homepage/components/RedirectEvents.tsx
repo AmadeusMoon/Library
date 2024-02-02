@@ -16,9 +16,10 @@ function RedirectEvents() {
       id="redirect-events"
     >
       <div className="text-container-events">
-        <h1>Esteemed servant of the Emperor,</h1>
+        <h2>Esteemed servant of the Emperor,</h2>
 
-        <h3>Invitation</h3>
+        <h4>Invitation</h4>
+
         <p>
           You have been invited by the Inquisition to attend a distinguished and
           confidential social event that will acknowledge your service, merit,
@@ -27,23 +28,28 @@ function RedirectEvents() {
           partake in a night of discourse, enlightenment, and communion.
         </p>
 
-        <h3>Location</h3>
+        <h4>Location</h4>
+
         <p>
           The event will take place in the Inquisitorial Sanctum, in the
           Segmentum Obscurus. You will have the opportunity to witness the glory
           and wisdom of the Emperors chosen.
         </p>
 
-        <h3>Agenda</h3>
+        <h4>Agenda</h4>
+
         <p>
           The Inquisition has arranged a special agenda for you and your fellow
           guests, where you will be honoured with the finest gifts and
           accolades.
         </p>
 
-        <h2>Remember, the Emperor protects.</h2>
+        <h2 style={{ textDecoration: 'underline' }}>
+          Remember, the Emperor protects.
+        </h2>
 
         <p>In His name,</p>
+
         <p>Amadeus DuCaine</p>
       </div>
       <img

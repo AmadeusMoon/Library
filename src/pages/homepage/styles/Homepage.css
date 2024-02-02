@@ -2,15 +2,16 @@
 .homepage-DarkTheme,
 .homepage-LightTheme {
     grid-template-rows: minmax(0.25fr, auto) minmax(2fr, auto) minmax(20fr, auto) minmax(0.25fr, auto);
-    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-columns: 1fr 6fr 1fr;
     display: grid;
     gap: 3vh;
 }
 
 /* Navbar */
 .navbar {
-    grid-column: 2;
+    grid-column: 2/ -1;
     grid-row: 1;
+    margin: 3vw;
 }
 
 /* Hero section */
@@ -30,7 +31,6 @@
 
 .LightTheme .hero-text,
 .DarkTheme .hero-text {
-    text-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
     font-size: calc(3vw + 3vh + 3vmin);
     backdrop-filter: blur(3px);
     border-radius: 33px;
@@ -42,12 +42,10 @@
 }
 
 .LightTheme .hero-text {
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.15);
 }
 
 .DarkTheme .hero-text {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.15);
 }
 
@@ -127,7 +125,6 @@
 .LightTheme .redirect-reading,
 .LightTheme .redirect-events,
 .LightTheme .redirect-about {
-    background-color: rgba(242, 242, 242, 0.6);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -135,7 +132,6 @@
 .DarkTheme .redirect-events,
 .DarkTheme .redirect-about {
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
-    background-color: rgb(003, 003, 003);
 }
 
 .redirect-reading .text-container-reading,
@@ -252,16 +248,15 @@ footer {
     }
 
     .hero-text-DarkTheme {
-        text-shadow: 2px 2px 6px rgba(200, 200, 200, 1);
         font-size: calc(2vw + 2vh + 2vmin);
-        background: rgba(0, 0, 0, 0.15);
+        background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(2px);
     }
     
     .hero-text-LightTheme {
-        text-shadow: 2px 2px 6px rgba(50, 50, 50, 1);
         background: rgba(255, 255, 255, 0.3);
         font-size: calc(2vw + 2vh + 2vmin);
         backdrop-filter: blur(2px);
     }
 }
+

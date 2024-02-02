@@ -18,7 +18,7 @@ function Privacy() {
       >
         <h1>Privacy Policy for Librarium Imperialis</h1>
         <div className="section">
-          <h2>Your Privacy</h2>
+          <h4>Your Privacy</h4>
           <ul>
             <li>
               At Librarium Imperialis, we deeply respect and value your privacy.
@@ -40,7 +40,7 @@ function Privacy() {
           </ul>
         </div>
         <div className="section">
-          <h2>Information We Collect</h2>
+          <h4>Information We Collect</h4>
           <ul>
             <li>
               The information we collect from our users includes, but is not
@@ -62,7 +62,7 @@ function Privacy() {
           </ul>
         </div>
         <div className="section">
-          <h2>How We Use Your Information</h2>
+          <h4>How We Use Your Information</h4>
           <ul>
             <li>The information we collect serves multiple purposes.</li>
             <li>
@@ -85,7 +85,7 @@ function Privacy() {
           </ul>
         </div>
         <div className="section">
-          <h2>Information Security</h2>
+          <h4>Information Security</h4>
           <ul>
             <li>
               At Librarium Imperialis, we take information security very

@@ -1,11 +1,10 @@
 footer {
-    display: flex;
     justify-content: space-between;
     max-height: 6vw;
+    display: flex;
 }
 
 .footer-LightTheme {
-    background-color: rgba(242, 242, 242, 0.6);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -21,7 +20,10 @@ footer {
 
 .footer-DarkTheme {
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
-    background-color: rgb(003, 003, 003);
+}
+.footer-DarkTheme a:hover,
+.footer-LightTheme a:hover{
+    color: #e97451
 }
 
 footer .authorship,
@@ -31,24 +33,25 @@ footer .social-media,
 footer .newsletter,
 footer .privacy,
 footer .about {
-    margin: 0.6em;
     text-align: center;
+    margin: 0.6em;
 }
 
 footer form {
-    display: flex;
     justify-content: center;
+    display: flex;
 }
 
 footer input[type="email"],
 footer input[type="text"]{
     margin-right: 0.5em;
-    margin-left: 0.5em;
     border-radius: 33px;
+    margin-left: 0.5em;
 }
 
 footer input[type='submit']{
     border-radius: 33px;
+    cursor: pointer;
     padding: 3px;
 }
 

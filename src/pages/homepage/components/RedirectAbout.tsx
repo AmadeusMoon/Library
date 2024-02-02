@@ -22,7 +22,8 @@ function RedirectAbout() {
         onClick={() => redirect('/about')}
       />
       <div className="text-container-about">
-        <h1>Greetings, warriors of the Imperium.</h1>
+        <h2>Greetings, warriors of the Imperium.</h2>
+
         <p>
           I am Amadeus DuCaine, Lord Commander of the X Legion, the Storm
           Walkers, the Iron Hands. I have fought for the Emperor since the dawn
@@ -30,10 +31,11 @@ function RedirectAbout() {
           He is our Master, our Creator, our Father.
         </p>
 
-        <h3>
+        <h4>
           But now, He is in peril, on Terra, surrounded by the traitors who
           turned against Him and His vision.
-        </h3>
+        </h4>
+
         <p>
           They are led by the Warmaster, Horus, the arch-heretic, the betrayer.
           He is the one who ambushed us on Istvaan V, the day of infamy, the day
@@ -42,9 +44,10 @@ function RedirectAbout() {
           overthrow the Imperium, and plunge the galaxy into darkness.
         </p>
 
-        <h3>
+        <h4>
           But we will not give up, we will not surrender, we will not die.
-        </h3>
+        </h4>
+
         <p>
           We are the Iron Hands, we are the sons of the Emperor, we are the
           storm that walks. We will fight on, we will resist, we will endure. We
@@ -54,12 +57,14 @@ function RedirectAbout() {
           are death.
         </p>
 
-        <h2>Join us, brothers. Join the Storm Walkers.</h2>
+        <h3>Join us, brothers. Join the Storm Walkers.</h3>
+
         <p>
           Together, we will make the traitors pay. Together, we will defend the
-          Emperor. Together, we will win this war. For the Imperium. For the
-          Emperor.
+          Emperor. Together, we will win this war. For the Imperium.
         </p>
+
+        <h2 style={{ textDecoration: 'underline' }}>For The Emperor.</h2>
       </div>
     </div>
   );

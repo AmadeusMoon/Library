@@ -11,7 +11,6 @@ function Navbar() {
       className={`navbar ${theme}`}
       id="navbar"
     >
-      <ThemeChanger />
       <Link
         className="navbar-link-to-homepage"
         id="navbarlinktohomepage"
@@ -33,6 +32,7 @@ function Navbar() {
       >
         Events
       </Link>
+      <ThemeChanger />
     </div>
   );
 }
